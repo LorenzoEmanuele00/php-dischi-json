@@ -6,11 +6,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div id="app">
-        
+        <div class="bg">
+            <header>
+                <h1>DiskFy</h1>
+            </header>
+            <div class="container my_container">
+                <div class="row row-cols-3 g-4 p-4">
+                    <div class="col" v-for="disk in diskArray" :key="title">
+                        <div class="card px-4 py-2 text-center">
+                            <img :src="disk.poster" alt="" class="pb-3">
+                            <h5 class="p-1 m-0">{{ disk.title }}</h5>
+                            <p class="p-1 m-0">{{ disk.author }}</p>
+                            <p class="p-1 m-0">{{ disk.year }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,26 @@
+header {
+    background-color: rgb(1, 29, 66);
+    color: white;
+    height: 80px;
+    padding: 15px 50px;
+}
+
+.bg {
+    background-color: rgb(30, 75, 134);
+    height: 100vh;
+}
+
+.my_container {
+    height: calc(100vh - 80px) ;
+    width: 50%;
+}
+
+.col {
+    width: calc(100% / 3);
+}
+
+.card {
+    background-color: rgb(2, 38, 88);
+    height: 100%;
+    color: white;
+}
